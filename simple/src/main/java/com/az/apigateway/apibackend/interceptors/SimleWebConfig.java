@@ -13,7 +13,7 @@ public class SimleWebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-
-        registry.addInterceptor(interceptor);
+        // Interceptor only injected for provided path
+        registry.addInterceptor(interceptor).addPathPatterns("/headers");
     }
 }
