@@ -47,7 +47,7 @@ public class StudentRepository {
         @Override
         public Student mapRow(ResultSet rs, int rowNum) throws SQLException {
             Student student = new Student();
-            student.setId(rs.getInt("id"));
+//            student.setId(rs.getInt("id"));
             student.setName(rs.getString("studentname"));
             student.setAge(rs.getInt("age"));
             student.setDescription(rs.getString("description"));
