@@ -16,11 +16,8 @@ import java.util.stream.Collectors;
 
 @SpringBootApplication
 public class ApibackendApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(ApibackendApplication.class, args);
     }
-
-
 }
 
